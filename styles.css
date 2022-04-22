@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.principal{
+    width: 100vw;
+    display: flex;
+    margin-top: 100px;
+}
+
+#features{
+    border-bottom: 1px solid grey;
+}
+
+#features-title {
+    overflow: hidden;
+   }
+
+   #features-title:after {
+    background-color: #333;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 62%;
+    margin-left: 10px;
+   }
+   #features-title:before {
+    margin-left: -50%;
+   }
+   /* #features-title:after {
+    left: 0.5em;
+    margin-right: -50%;
+   } */
+
+@media (max-width: 768px){
+    #australia-content #australia-img, #malaria-content #malaria-img{
+        display: none;
+    }
+
+    #australia-content{
+        border-right: 1px solid grey;
+        border-top: 1px soid grey;
+    }
+
+    #australia-content h5, #malaria-content h5{
+        font-size: 0.9rem;
+    }
+
+    #america, #modi{
+        display: none;
+    }
+
+    #features-title {
+        overflow: hidden;
+       }
+    
+       #features-title:after {
+        background-color: #333;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 55%;
+        margin-left: 10px;
+       }
+       #features-title:before {
+        margin-left: -50%;
+       }
+
+       #features h5{
+           font-size: 1rem;
+       }
+
+       #features p{
+           font-size: 0.8rem;
+       }
+}
